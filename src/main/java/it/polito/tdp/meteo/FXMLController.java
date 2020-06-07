@@ -8,24 +8,25 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
-//controller turno B --> passare agli altri branch master_turnoA o master_turnoC per turni A o C
+//controller turno A --> passare agli altri branch master_turnoB o master_turnoC per turni B o C
 
 public class FXMLController {
 	
 	private Model model;
 
-    @FXML
+	@FXML
     private ResourceBundle resources;
 
     @FXML
     private URL location;
 
     @FXML
-    private ChoiceBox<?> boxMese;
+    private TextField txtTemperatura;
 
     @FXML
-    private Button btnUmidita;
+    private Button btnCerca;
 
     @FXML
     private Button btnCalcola;
@@ -35,8 +36,8 @@ public class FXMLController {
 
     @FXML
     void initialize() {
-        assert boxMese != null : "fx:id=\"boxMese\" was not injected: check your FXML file 'Meteo.fxml'.";
-        assert btnUmidita != null : "fx:id=\"btnUmidita\" was not injected: check your FXML file 'Meteo.fxml'.";
+        assert txtTemperatura != null : "fx:id=\"txtTemperatura\" was not injected: check your FXML file 'Meteo.fxml'.";
+        assert btnCerca != null : "fx:id=\"btnCerca\" was not injected: check your FXML file 'Meteo.fxml'.";
         assert btnCalcola != null : "fx:id=\"btnCalcola\" was not injected: check your FXML file 'Meteo.fxml'.";
         assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'Meteo.fxml'.";
 
